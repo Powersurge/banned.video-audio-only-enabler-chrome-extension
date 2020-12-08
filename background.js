@@ -4,7 +4,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     console.log("Url intercepted: " + info.url);
     if(info.url.indexOf("allow_audio_only") == -1)
     {
-      var newUrl = info.url.replace(".m3u8?",".m3u8?allow_audio_only=true&");
+      var newUrl = info.url.replace("playlist.m3u8?","audio_0_eng/audio_0_eng.m3u8?");
       console.log("new url:  "+newUrl);
       return {redirectUrl: newUrl};
     }
@@ -13,7 +13,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 
   {
     urls: [
-      "*://usher.twitch.tv/*"
+      "*://banned.video/*"
     ],
   },
   // extraInfoSpec
