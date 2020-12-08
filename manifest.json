@@ -1,9 +1,9 @@
 {
-  "name": "Twitch Audio Optione Enabler",
+  "name": "Banned.Video Audio Option Enabler",
   "version": "1.0",
-  "description": "Enables audio only option for twitch streams",
+  "description": "Enables audio only option for Banned.Video streams",
   "permissions": ["webRequest", "webRequestBlocking",
-    "*://usher.twitch.tv/*"
+    "*://banned.video/*"
     ],
 
   "background": {
